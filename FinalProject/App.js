@@ -1,37 +1,38 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, Button } from 'react-native';
-import pic from './assets/images/img.jpg';
-import styles from '.assets/css/styles';
+import { Button, View, Text, Image } from 'react-native';
+import { createStackNavigator, createAppContainer } from 'react-navigation'; // Version can be specified in package.json
+import logo from './assets/images/logo.png';
+import styles from './assets/css/styles';
+import HomeScreen from './HomeScreen';
+import LoginScreen from './LoginScreen';
+import SignUpScreen from './SignUpScreen';
 
 
-export default class App extends React.Component {
+class DetailsScreen extends React.Component {
   render() {
     return (
-
-      <View style={styles.container}>
-        <View style={styles.topContainer}>
-          <Text style={styles.h1}>CS 125 Final Project</Text>
-          
-          <Text style={styles.h2}>
-            Yo this is lit.
-          </Text>
-        </View>
-        <View style={styles.middleContainer}>
-          <Image source={pic} style={styles.pic} />
-        </View>
-          <View style={styles.bottomContainer}>
-          <View style={styles.buttonContainer}>
-            <Button
-              title="GET STARTED"
-              style={styles.button}
-              onPress={() => this.getStarted()}
-              color="#008F68"
-            />
-          </View>
-        </View>
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Details Screen</Text>
       </View>
-     
     );
   }
 }
 
+const RootStack = createStackNavigator(
+  {
+    Home: HomeScreen,
+    Login: LoginScreen,
+    SignUp: SignUpScreen
+  },
+  {
+    initialRouteName: 'Home',
+  }
+);
+
+const AppContainer = createAppContainer(RootStack);
+
+export default class App extends React.Component {
+  render() {
+    return <AppContainer />;
+  }
+}

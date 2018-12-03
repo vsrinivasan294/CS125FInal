@@ -1,23 +1,22 @@
 import {StyleSheet} from 'react-native';
-
 const styles = StyleSheet.create({
 
 container: {
     flex: 1,
-    backgroundColor: '#F08080',
+    backgroundColor: '#F9CB9C',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  h1: {
-    color: '#008F68',
-    fontSize: 40,
+h1: {
+    color: 'white',
+    fontSize: 60,
   },
-  h2: {
+h2: {
     color: '#FAE042',
     fontSize: 18,
     marginTop: 8,
   },
-  pic: {
+pic: {
   width: 300,
   height: 260,
   justifyContent: 'center',
@@ -37,9 +36,15 @@ bottomContainer: {
   width: '90%',
   margin: 20,
   padding: 10,
+}, 
+button: {
+  justifyContent: 'center',
+  alignItems: 'center',
+  cbackgroundColor: '#F9CB9C',
+  borderWidth: 3, 
+  borderColor: 'white'
+
 }
 });
 
-export default styles;
-
-
+export default styles
