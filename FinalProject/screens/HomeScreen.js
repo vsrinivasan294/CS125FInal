@@ -17,18 +17,11 @@ export default class HomeScreen extends React.Component {
         </View>
           <View style={styles.bottomContainer}>
           <View style={styles.buttonContainer}>
-            <Button
-              color="#828282"
-              title="LOGIN!!"
-              style={styles.button}
-              onPress={() => this.props.navigation.navigate('Login')}
-            />
-            <Button
-              color="#828282"
-              title="REGISTER!!"
-              style={styles.button}
-              onPress={() => this.props.navigation.navigate('SignUp')}
-            />
+
+          <Text style={styles.h2} onPress={() => this.props.navigation.navigate('Login')}> Login </Text>
+
+          <Text style={styles.h2} onPress={() => this.props.navigation.navigate('SignUp')}> Signup </Text>
+
           </View>
         </View>
       </View>
