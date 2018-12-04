@@ -10,10 +10,7 @@ export default class SartingScreen extends React.Component {
 
       <View style={styles.container}>
         <View style={styles.topContainer}>
-          <Text style={styles.h1}>GET STARTED</Text>
-        </View>
-        <View style={styles.middleContainer}>
-          <Image source={logo} style={styles.pic} />
+          <Text style={styles.h1}>WELCOME</Text>
         </View>
           <View style={styles.bottomContainer}>
           <View style={styles.buttonContainer}>

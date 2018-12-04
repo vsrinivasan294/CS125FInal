@@ -11,6 +11,10 @@ import CameraScreen from './screens/CameraScreen';
 import BrowseScreen from './screens/BrowseScreen';
 import UploadScreen from './screens/UploadScreen';
 import StartingScreen from './screens/StartingScreen';
+import ByLocationScreen from './screens/ByLocationScreen';
+import ByProductScreen from './screens/ByProductScreen';
+//import TestScreen from './screens/TestScreen';
+
 
 const RootStack = createStackNavigator(
   {
@@ -21,6 +25,9 @@ const RootStack = createStackNavigator(
     Starting: StartingScreen,
     Browse: BrowseScreen,
     Upload: UploadScreen, 
+    ByLocation: ByLocationScreen, 
+    ByProduct: ByProductScreen,
+    //Test: TestScreen,
   },
   {
     initialRouteName: 'Home',
