@@ -17,6 +17,12 @@ h2: {
     justifyContent: 'center',
     textAlign: 'center',
   },
+items: {
+    color: '#828282',
+    fontSize: 36,
+    justifyContent: 'center',
+    //textAlign: 'center',
+  },
 pic: {
   width: 300,
   height: 260,

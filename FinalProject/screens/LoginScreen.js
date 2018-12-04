@@ -39,7 +39,7 @@ export default class LoginScreen extends React.Component {
           style={styles.input}
         />
         
-        <Text style={styles.h2} onPress={this.login.bind(this)}> Login </Text>
+        <Text style={styles.h2} onPress={() => this.props.navigation.navigate('Starting')}> Login </Text>
         <Text style={styles.h2} onPress={this.forgetPassword.bind(this)}> Forgot your password? </Text>
        
       </View>
