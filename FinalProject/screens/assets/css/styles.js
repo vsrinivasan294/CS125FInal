@@ -53,7 +53,7 @@ bottomContainer: {
 button: {
   justifyContent: 'center',
   alignItems: 'center',
-  cbackgroundColor: '#F9CB9C',
+  backgroundColor: '#F9CB9C',
   borderWidth: 3, 
   borderColor: 'white'
 
