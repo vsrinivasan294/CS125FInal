@@ -13,6 +13,7 @@ import UploadScreen from './screens/UploadScreen';
 import StartingScreen from './screens/StartingScreen';
 import ByLocationScreen from './screens/ByLocationScreen';
 import ByProductScreen from './screens/ByProductScreen';
+import ImageScreen from './screens/ImageScreen';
 //import TestScreen from './screens/TestScreen';
 
 
@@ -27,6 +28,7 @@ const RootStack = createStackNavigator(
     Upload: UploadScreen, 
     ByLocation: ByLocationScreen, 
     ByProduct: ByProductScreen,
+    Image: ImageScreen,
     //Test: TestScreen,
   },
   {

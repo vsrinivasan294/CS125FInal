@@ -71,7 +71,8 @@ export default class LoginScreen extends React.Component {
           // <View>
           // <Text style={styles.h2}>Welcome to Matcher: {props.name}</Text>
           // </View>
-          <Button title="New Post" onPress={() => this.props.navigation.navigate('Upload')} />
+          <Button title="Browse Items" onPress={() => this.props.navigation.navigate('Browse')} />
+         
         ) : (
           <LoginPage signIn={this.signIn} />
         )}
