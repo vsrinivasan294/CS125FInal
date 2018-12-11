@@ -13,8 +13,8 @@ export default class ByLocationScreen extends React.Component {
           flex: 1
         }}
         initialRegion={{
-          latitude: 37.78825,
-          longitude: -122.4324,
+          latitude: 40.1020,
+          longitude: -88.2272,
           latitudeDelta: 0.0922,
           longitudeDelta: 0.0421
         }}
