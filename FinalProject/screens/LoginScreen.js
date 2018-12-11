@@ -67,7 +67,11 @@ export default class LoginScreen extends React.Component {
       // </View>
       <View style={styles.container}>
         {this.state.signedIn ? (
-          <LoggedInPage name={this.state.name} photoUrl={this.state.photoUrl} />
+          // <LoggedInPage name={this.state.name} photoUrl={this.state.photoUrl} />
+          // <View>
+          // <Text style={styles.h2}>Welcome to Matcher: {props.name}</Text>
+          // </View>
+          <Button title="New Post" onPress={() => this.props.navigation.navigate('Upload')} />
         ) : (
           <LoginPage signIn={this.signIn} />
         )}
@@ -78,7 +82,7 @@ export default class LoginScreen extends React.Component {
 const LoginPage = props => {
   return (
     <View>
-      <Text style={styles.header}>Sign In With Google</Text>
+      <Text style={styles.h2}>Sign In With Google</Text>
       <Button title="Sign in with Google" onPress={() => props.signIn()} />
     </View>
   )
@@ -86,9 +90,10 @@ const LoginPage = props => {
 
 const LoggedInPage = props => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Welcome:{props.name}</Text>
-      <Image style={styles.image} source={{ uri: props.photoUrl }} />
+    <View>
+      <Text style={styles.h2}>Welcome to Matcher: {props.name}</Text>
+      <Image source={{ uri: props.photoUrl }} />
+      <Button title="New Post" onPress={() => this.props.navigation.navigate('SignUp')} />
     </View>
   )
 }
