@@ -16,7 +16,7 @@ export default class UploadScreen extends React.Component {
           <View style={styles.buttonContainer}>
 
           <Text style={styles.h2} onPress={() => this.props.navigation.navigate('Camera')}> TAKE A PICTURE</Text>
-
+          <Text style={styles.h2} onPress={() => this.props.navigation.navigate('Image')}> UPLOAD A PICTURE</Text>
           <Text style={styles.h2} onPress={() => this.props.navigation.navigate('Upload')}> UPLOAD PRODUCTS </Text>
 
           </View>

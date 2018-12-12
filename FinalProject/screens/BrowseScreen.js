@@ -12,6 +12,7 @@ export default class BrowseScreen extends React.Component {
         <View style={styles.topContainer}>
           <Text style={styles.h3} onPress={() => this.props.navigation.navigate('ByProduct')}>Browse By Product</Text>
           <Text style={styles.h3} onPress={() => this.props.navigation.navigate('ByLocation')}>Browse By Location</Text>
+          <Text style={styles.h3} onPress={() => this.props.navigation.navigate('Upload')}>Upload your Items</Text>
           
         </View>
       </View>
