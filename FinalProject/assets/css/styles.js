@@ -9,10 +9,12 @@ container: {
   },
 h1: {
     color: 'white',
+    backgroundColor: '#C0C0C0',
     fontSize: 60,
   },
 h2: {
-    color: '#FAE042',
+    color: 'white',
+    backgroundColor: '#C0C0C0',
     fontSize: 18,
     marginTop: 8,
   },
@@ -40,9 +42,10 @@ bottomContainer: {
 button: {
   justifyContent: 'center',
   alignItems: 'center',
-  backgroundColor: '#F9CB9C',
-  borderWidth: 3, 
+  backgroundColor: '#C0C0C0',
+  borderWidth: 4, 
   borderColor: 'white'
+  color: 'white',
 
 }
 });
