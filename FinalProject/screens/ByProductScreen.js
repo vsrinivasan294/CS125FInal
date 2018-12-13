@@ -14,7 +14,6 @@ export default class ByProductScreen extends React.Component {
           <Text style={styles.h2}>By Location</Text>
            <FlatList
           data={[
-<<<<<<< HEAD
             {key: 'IPhone'},
             {key: 'Mac'},
             {key: 'Sunglasses'},
